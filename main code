@@ -69,17 +69,13 @@ int votecheck(const char* filewanttocount, const char* filewanttocheck,int resul
     fclose(fo2);
     int winnercheck= (usercount-1)/2;
     if (yesvotecounter>winnercheck) {
-        result=1;
-        printf("yes");}
+        result=1;}
     else if (novotecounter>winnercheck) {
-        result=-1;
-        printf("no");}
+        result=-1;}
     else if (abstainvotecounter>winnercheck) {
-        result=0;
-        printf("abstain");}
+        result=0;}
     else{
-        result=3;
-        printf("jnsk");}
+        result=3;}
     return result;}
 int main() {
     char txt[5]= ".txt";
